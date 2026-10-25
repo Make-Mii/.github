@@ -14,7 +14,7 @@
 
 ## Overview
 
-**Make Mii!** is an end-to-end computer vision and Nintendo Wii homebrew ecosystem that transforms your real-life face into a canonical Nintendo Mii avatar in real time. Using a live webcam, the system isolates facial landmarks and hair contours, matches physical characteristics against canonical Nintendo Mii asset geometries using OpenAI's CLIP, extracts perceptual color tones in CIELAB space, and beams the generated Mii over UDP to bare-metal Wii hardware to be rendered live and permanently saved into the console's Mii Plaza database.
+**Make Mii!** is an end-to-end computer vision and Nintendo Wii homebrew system that transforms your real-life face into a Nintendo Mii avatar in real time. Using a live webcam, the system isolates facial landmarks and hair contours, matches physical characteristics against Nintendo Mii asset geometries using OpenAI's CLIP, extracts perceptual color tones in CIELAB space, and transfers the generated Mii over UDP to real Wii hardware to be rendered live and permanently saved into the console's Mii Plaza database.
 
 ---
 
@@ -105,7 +105,7 @@ pip install -r requirements.txt</code></pre>
 ### 3. Save to Console
 * Face the camera; the matched Mii updates dynamically on the Wii display.
 * Press **[A]** on the primary Wiimote to save the Mii into the console's Mii Plaza database (`RFL_DB.dat`).
-* Open the **Mii Channel** or launch **Wii Sports**—your avatar is now playable across all Wii software!
+* Open the **Mii Channel** or launch **Wii Sports**, your avatar is now playable across all Wii software!
 
 ---
 
